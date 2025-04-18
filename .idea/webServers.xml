@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="78a88355-e4e4-4cc9-8efb-6e3763b30a3e" name="lanseaguemill.co.uk" url="http://www.lanseaguemill.co.uk">
+        <fileTransfer host="www.lanseaguemill.co.uk" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="North Cornwall CNC – family‑run specialists in illuminated 3D signs. Discover our story, values and craftsmanship." />
+    <title>About Us – Illuminated 3D Signs | North Cornwall CNC</title>
+
+    <!-- Font & Utility Framework -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        body{font-family:Inter,system-ui,"Segoe UI",sans-serif}
+        header.scrolled{backdrop-filter:blur(10px);background-color:rgba(15,23,42,.6)}
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+<!-- Header -->
+<header id="site-header" class="fixed inset-x-0 top-0 z-50 flex items-center justify-between px-4 md:px-8 py-3 transition-colors duration-300">
+    <a href="index.html" class="text-xl font-bold tracking-tight text-white"><span class="text-yellow-300">Nc</span>CnC<span class="hidden sm:inline"> 3D Signs</span></a>
+
+    <button id="navToggle" class="text-white text-2xl md:hidden focus:outline-none" aria-label="Toggle navigation">☰</button>
+
+    <nav aria-label="Main navigation" class="hidden md:block">
+        <ul class="flex gap-6 text-sm font-medium text-white">
+            <li><a class="hover:text-yellow-300" href="index.html">Home</a></li>
+            <li><a class="text-yellow-300" href="about.html">About</a></li>
+            <li><a class="hover:text-yellow-300" href="3d-signs.html">3D Signs</a></li>
+            <li><a class="hover:text-yellow-300" href="gallery.html">Gallery</a></li>
+            <li><a class="hover:text-yellow-300" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Mobile nav -->
+<nav id="mobileNav" class="fixed inset-0 z-40 hidden flex-col bg-gradient-to-b from-sky-600 to-indigo-700 p-6 text-lg font-medium text-white">
+    <button class="self-end text-3xl" aria-label="Close navigation" id="navClose">×</button>
+    <ul class="mt-8 space-y-4">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="text-yellow-300" href="about.html">About</a></li>
+        <li><a href="3d-signs.html">3D Signs</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main class="pt-0">
+    <!-- Hero / Tagline -->
+    <section class="relative bg-gradient-to-r from-sky-700 to-indigo-800 pt-32 pb-12 text-center text-white">
+        <h1 class="mx-auto max-w-4xl px-4 text-4xl font-extrabold tracking-tight md:text-5xl">Crafting Illuminated 3D Signs Since 2015</h1>
+        <p class="mx-auto mt-4 max-w-2xl px-4 text-lg">Family‑run in Cornwall, engineering logos that shine – day & night.</p>
+    </section>
+
+    <!-- Story & Expertise -->
+    <section class="mx-auto mt-16 max-w-4xl px-4">
+        <h2 class="text-2xl font-bold text-slate-900">Our Story & Expertise</h2>
+        <p class="mt-4 leading-relaxed">Founded by <strong>Alan Wold</strong>, a sign maker with 40 years of experience, North Cornwall CNC specialises in bold, professional, and affordable 3D LED signage. Working directly from our Cornwall workshop, we design, machine, and assemble every sign in-house—ensuring precision, quality, and durability.</p>
+    </section>
+
+    <!-- Values -->
+    <section class="mx-auto mt-16 max-w-6xl px-4">
+        <h2 class="text-2xl font-bold text-slate-900 text-center">What Drives Us</h2>
+        <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <article class="rounded-xl bg-white p-6 shadow">
+                <h3 class="font-semibold text-sky-700">Quality First</h3>
+                <p class="mt-2 text-sm">Premium alloys, UV‑stable acrylic, rigorous QC. If it won’t last a decade, we won’t ship it.</p>
+            </article>
+            <article class="rounded-xl bg-white p-6 shadow">
+                <h3 class="font-semibold text-sky-700">Client Collaboration</h3>
+                <p class="mt-2 text-sm">Concept sketches, 3D mock‑ups, on‑site install – you’re looped‑in from first idea to final fixings.</p>
+            </article>
+            <article class="rounded-xl bg-white p-6 shadow">
+                <h3 class="font-semibold text-sky-700">Relentless Innovation</h3>
+                <p class="mt-2 text-sm">RGB pixel LEDs? Push‑through acrylic? We test new tech so your signage stays ahead of trend.</p>
+            </article>
+            <article class="rounded-xl bg-white p-6 shadow">
+                <h3 class="font-semibold text-sky-700">Local Commitment</h3>
+                <p class="mt-2 text-sm">Cornish business, Cornish craftsmen – quick lead‑times and genuine community support.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="mx-auto mt-16 max-w-3xl px-4 text-center">
+        <h2 class="text-2xl font-bold text-slate-900">Trust & Testimonials</h2>
+        <blockquote class="relative mt-8 rounded-lg bg-white p-8 shadow-lg">
+            <svg class="absolute -top-5 left-1/2 -translate-x-1/2 transform text-yellow-300" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 24 24"><path d="M2.3 17.38C3 13.66 4.83 9.97 9.2 2h4.4l-1.71 10.3c3.26.86 4.81 3.43 5.57 5.08C18.43 20.38 16.2 23 12 23c-3.45 0-8.08-2.25-9.7-5.62z"/></svg>
+            <p class="text-lg leading-relaxed text-slate-700">“The halo‑lit sign North Cornwall CNC built for our hotel is nothing short of spectacular. Guests mention it daily, and it’s now our signature landmark.”</p>
+            <cite class="mt-4 block text-sm font-semibold text-slate-500">John Doe – Seaview Hotel</cite>
+        </blockquote>
+        <p class="mt-8 text-sm text-slate-600">Proud members of the <strong>British Sign & Graphics Association (BSGA)</strong>.</p>
+    </section>
+
+    <!-- CTA -->
+    <section class="mt-20 overflow-hidden bg-gradient-to-r from-sky-600 to-indigo-700 py-20 text-center text-white">
+        <h2 class="mx-auto mb-4 max-w-2xl text-3xl font-bold">Let’s Build Your Statement Sign</h2>
+        <p class="mx-auto mb-8 max-w-2xl text-lg">Tell us your idea – we’ll turn it into illuminated reality.</p>
+        <a href="contact.html" class="inline-block rounded-full bg-white px-10 py-4 text-sky-700 font-semibold shadow-lg ring-2 ring-white/50 hover:bg-slate-100 transition">Get in Touch</a>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-slate-900 py-12 text-center text-slate-400">
+    <address class="not-italic leading-relaxed">
+        North Cornwall CNC – Lanseague Mill, St Kew Highway, Bodmin, PL30 3DS, UK<br />
+        <a href="tel:+441208368564" class="hover:text-white">01208 368564</a> | <a href="mailto:alan@nccnc.co.uk" class="hover:text-white">alan@nccnc.co.uk</a>
+    </address>
+    <p class="mt-4 text-xs">© 2025 North Cornwall CNC. All rights reserved.</p>
+</footer>
+
+<!-- Scripts -->
+<script>
+    // Mobile nav
+    const navToggle = document.getElementById('navToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    const navClose = document.getElementById('navClose');
+    navToggle && navToggle.addEventListener('click', () => mobileNav.classList.remove('hidden'));
+    navClose && navClose.addEventListener('click', () => mobileNav.classList.add('hidden'));
+
+    // Header blur
+    const header = document.getElementById('site-header');
+    const blurHeader = () => window.scrollY > 10 ? header.classList.add('scrolled') : header.classList.remove('scrolled');
+    blurHeader(); window.addEventListener('scroll', blurHeader);
+</script>
+</body>
+</html>
