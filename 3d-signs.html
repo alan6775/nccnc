@@ -12,13 +12,13 @@
 
     <!-- Minor tweaks not worth a Tailwind plugin -->
     <style>
-        body{font-family:Inter,system-ui,"Segoe UI",sans-serif;}
+        body{font-family:Inter,system-ui,"Segoe UI",sans-serif}
         header.scrolled{backdrop-filter:blur(10px);background-color:rgba(15,23,42,.6)}
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
 
-<!-- Header (shared across site) -->
+<!-- Header -->
 <header id="site-header" class="fixed inset-x-0 top-0 z-50 flex items-center justify-between px-4 md:px-8 py-3 transition-colors duration-300">
     <a href="/" class="text-xl font-bold tracking-tight text-white"><span class="text-yellow-300">Nc</span>CnC<span class="hidden sm:inline"> 3D Signs</span></a>
 
@@ -27,10 +27,10 @@
     <nav aria-label="Main navigation" class="hidden md:block">
         <ul class="flex gap-6 text-sm font-medium text-white">
             <li><a class="hover:text-yellow-300" href="index.html">Home</a></li>
-            <li><a class="hover:text-yellow-300" href="about.html">About</a></li>
+            <li><a class= "hover:text-yellow-300"  href="about.html">About</a></li>
             <li><a class="text-yellow-300" href="3d-signs.html">3D Signs</a></li>
             <li><a class="hover:text-yellow-300" href="gallery.html">Gallery</a></li>
-            <li><a class="hover:text-yellow-300" href="contact.html">Contact</a></li>
+            <li><a class="hover:text-yellow-300" href="contact.php">Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -47,25 +47,18 @@
     </ul>
 </nav>
 
-<!-- Hero -->
-<section class="relative flex min-h-[60vh] items-center justify-center bg-gradient-to-br from-sky-700 to-indigo-900">
-    <div class="absolute inset-0">
-        <img src="images/3d-signs-hero.jpg" alt="Fabricating illuminated channel letters in workshop" class="h-full w-full object-cover opacity-25" loading="lazy" />
-    </div>
-    <div class="relative z-10 mx-auto max-w-3xl p-4 text-center text-white">
-        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-md">3D Signage Services</h1>
-        <p class="mt-4 text-lg md:text-2xl">Channel letters, halo‑lit logos &amp; bespoke illuminated signs – crafted in Cornwall.</p>
-    </div>
-</section>
-
-<main id="main-content" class="mx-auto max-w-6xl px-4 py-16">
-    <section>
+<main class="pt-0">
+    <section class="relative bg-gradient-to-r from-sky-700 to-indigo-800 pt-32 pb-12 text-center text-white">
+        <h1 class="mx-auto max-w-4xl px-4 text-4xl font-extrabold tracking-tight md:text-5xl">3D Signage Services</h1>
+        <p class="mx-auto mt-4 px-4 text-lg">Channel letters, halo‑lit logos &amp; bespoke illuminated signs – crafted in Cornwall.</p>
+    </section>
+    <section class="mx-auto mt-16 max-w-4xl px-4">
         <h2 class="mb-6 text-3xl font-bold text-slate-900">Why choose a 3D sign?</h2>
         <p class="text-lg text-slate-700">We design and manufacture <strong class="font-semibold">bespoke 3D signs</strong> that make your brand impossible to ignore. From illuminated channel letters to intricate logo signs, our team handles the entire process in‑house.</p>
     </section>
 
     <!-- Types of 3D Signs -->
-    <section class="mt-16">
+    <section class="mx-auto mt-16 max-w-6xl px-4">
         <h2 class="mb-8 text-center text-3xl font-bold text-slate-900">Types of 3D Signs We Offer</h2>
 
         <div class="grid gap-12 lg:grid-cols-3">
@@ -93,7 +86,7 @@
     </section>
 
     <!-- Materials & Construction -->
-    <section class="mt-24">
+    <section class="mx-auto mt-16 max-w-6xl px-4">
         <h2 class="mb-6 text-center text-3xl font-bold text-slate-900">Materials &amp; Construction</h2>
         <p class="mx-auto max-w-3xl text-center text-lg text-slate-700">Every sign is engineered for Cornwall’s coastal climate – corrosion‑resistant metals, UV‑stable acrylics and IP67 electronics come as standard.</p>
 
@@ -130,7 +123,7 @@
     </section>
 
     <!-- Process -->
-    <section class="mt-24">
+    <section class="mx-auto mt-16 max-w-6xl px-4">
         <h2 class="mb-8 text-center text-3xl font-bold text-slate-900">From Idea to Installation</h2>
 
         <ol class="relative border-l border-sky-600 pl-8">
@@ -156,8 +149,8 @@
             </li>
             <li>
                 <span class="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-sky-600 text-xs font-bold text-white">5</span>
-                <h3 class="font-semibold text-slate-800">Delivery &amp; Installation</h3>
-                <p class="mt-2 text-sm text-slate-600">Our team mounts and commissions your sign, leaving you with a maintenance guide.</p>
+                <h3 class="font-semibold text-slate-800">Delivery/Collection</h3>
+                <p class="mt-2 text-sm text-slate-600">Delivered to pre-arranged address or collection from workshop.</p>
             </li>
         </ol>
     </section>

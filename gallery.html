@@ -13,20 +13,28 @@
     <style>
         body{font-family:Inter,system-ui,"Segoe UI",sans-serif}
         header.scrolled{backdrop-filter:blur(10px);background-color:rgba(15,23,42,.6)}
+        figure.group figcaption {
+            opacity: 1; /* Always visible */
+            transition: none; /* Remove hover transition */
+        }
+    </style>
+    <style>
+        body{font-family:Inter,system-ui,"Segoe UI",sans-serif}
+        header.scrolled{backdrop-filter:blur(10px);background-color:rgba(15,23,42,.6)}
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
 
 <!-- Header -->
 <header id="site-header" class="fixed inset-x-0 top-0 z-50 flex items-center justify-between px-4 md:px-8 py-3 transition-colors duration-300">
-    <a href="index.html" class="text-xl font-bold tracking-tight text-white"><span class="text-yellow-300">Nc</span>CnC<span class="hidden sm:inline"> 3D Signs</span></a>
+    <a href="/" class="text-xl font-bold tracking-tight text-white"><span class="text-yellow-300">Nc</span>CnC<span class="hidden sm:inline"> 3D Signs</span></a>
 
     <button id="navToggle" class="text-white text-2xl md:hidden focus:outline-none" aria-label="Toggle navigation">☰</button>
 
     <nav aria-label="Main navigation" class="hidden md:block">
         <ul class="flex gap-6 text-sm font-medium text-white">
             <li><a class="hover:text-yellow-300" href="index.html">Home</a></li>
-            <li><a class="hover:text-yellow-300" href="about.html">About</a></li>
+            <li><a class= "hover:text-yellow-300" href="about.html">About</a></li>
             <li><a class="hover:text-yellow-300" href="3d-signs.html">3D Signs</a></li>
             <li><a class="text-yellow-300" href="gallery.html">Gallery</a></li>
             <li><a class="hover:text-yellow-300" href="contact.html">Contact</a></li>
@@ -41,7 +49,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="3d-signs.html">3D Signs</a></li>
-        <li><a class="text-yellow-300" href="gallery.html">Gallery</a></li>
+        <li><a class="font-semibold text-yellow-300" href="gallery.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
@@ -49,12 +57,14 @@
 <main class="pt-0">
     <!-- Hero / Tagline -->
     <section class="relative bg-gradient-to-r from-sky-700 to-indigo-800 pt-32 pb-12 text-center text-white">
-        <h1 class="mx-auto max-w-5xl px-4 text-4xl font-extrabold tracking-tight md:text-5xl">Illuminated 3D Sign Gallery – CNC‑Fabricated Channel Letters & Logos</h1>
-        <p class="mx-auto mt-4 max-w-2xl px-4 text-lg">Real installations that prove dimensional signage turns brands into landmarks.</p>
+        <h1 class="mx-auto max-w-4xl px-4 text-4xl font-extrabold tracking-tight md:text-5xl">Illuminated 3D Sign Gallery</h1>
+        <p class="mx-auto mt-4 px-4 text-lg">Real installations that prove dimensional signage turns brands into landmarks.</p>
     </section>
 
+    <h2 class="text-2xl font-bold text-slate-900 text-center mt-15">CNC‑Fabricated Channel Letters & Logos</h2>
     <!-- Gallery Grid -->
     <section class="mx-auto mt-12 max-w-6xl px-4">
+
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <!-- Project 1 -->
             <figure class="group relative overflow-hidden rounded-lg shadow-lg gallery-img" data-description = "This eye-catching custom sign crafted for The Little Greek combines classic elegance with modern design, showcasing bold, dimensional lettering that prominently highlights the brand's identity. The sleek, sophisticated black finish contrasts beautifully with the minimalist aesthetic, providing exceptional visibility and visual impact. Ideal for both indoor and outdoor environments, this signage not only enhances brand presence but also sets a distinctive and welcoming tone for customers.">

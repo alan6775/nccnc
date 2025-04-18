@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# If the file doesn't exist as-is
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite extensionless to .php
+RewriteRule ^([^\.\/]+)$ $1.php [NC,L]
+
+# Optionally rewrite .html to .php
+RewriteRule ^([^/]+)\.html$ $1.php [NC,L]
