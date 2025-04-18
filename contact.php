@@ -4,19 +4,20 @@ $success = false;
 $error = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $to = 'your@email.com'; // Replace with your actual email address
-    $subject = !empty($_POST['subject']) ? $_POST['subject'] : 'New Contact Form Submission';
+    $to = 'alan@nccnc.co.uk'; // <-- Replace with your email address
+    $subject = isset($_POST['subject']) && $_POST['subject'] !== '' ? $_POST['subject'] : 'New Contact Form Submission';
 
-    $name = htmlspecialchars($_POST['name'] ?? '');
-    $email = htmlspecialchars($_POST['email'] ?? '');
-    $phone = htmlspecialchars($_POST['phone'] ?? '');
-    $message = htmlspecialchars($_POST['message'] ?? '');
+    // Sanitize inputs
+    $name = isset($_POST['name']) ? htmlspecialchars($_POST['name']) : '';
+    $email = isset($_POST['email']) ? htmlspecialchars($_POST['email']) : '';
+    $phone = isset($_POST['phone']) ? htmlspecialchars($_POST['phone']) : '';
+    $message = isset($_POST['message']) ? htmlspecialchars($_POST['message']) : '';
 
     if (!$name || !$email || !$message) {
         $error = 'Please fill out all required fields.';
     } else {
-        $body = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message";
-        $headers = "From: $email";
+        $body = "Name: " . $name . "\nEmail: " . $email . "\nPhone: " . $phone . "\n\nMessage:\n" . $message;
+        $headers = 'From: ' . $email;
 
         if (mail($to, $subject, $body, $headers)) {
             $success = true;
