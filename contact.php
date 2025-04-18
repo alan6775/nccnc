@@ -4,7 +4,7 @@ $success = false;
 $error = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $to = 'alan@nccnc.co.uk'; // <-- Replace with your email address
+    $to = 'alan.wold@astoncare.co.uk'; // <-- Replace with your email address
     $subject = isset($_POST['subject']) && $_POST['subject'] !== '' ? $_POST['subject'] : 'New Contact Form Submission';
 
     // Sanitize inputs
