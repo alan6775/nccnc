@@ -25,11 +25,11 @@
 
     <nav aria-label="Main navigation" class="hidden md:block">
         <ul class="flex gap-6 text-sm font-medium text-white">
-            <li><a class="hover:text-yellow-300" href="index.html">Home</a></li>
-            <li><a class= "text-yellow-300" href="about.html">About</a></li>
-            <li><a class="hover:text-yellow-300" href="3d-signs.html">3D Signs</a></li>
-            <li><a class="hover:text-yellow-300" href="gallery.html">Gallery</a></li>
-            <li><a class="hover:text-yellow-300" href="contact.php">Contact</a></li>
+            <li><a class="hover:text-yellow-300" href="/">Home</a></li>
+            <li><a class="hover:text-yellow-300" href="about">About</a></li>
+            <li><a class="hover:text-yellow-300" href="3d-signs">3D Signs</a></li>
+            <li><a class="hover:text-yellow-300" href="gallery">Gallery</a></li>
+            <li><a class="hover:text-yellow-300" href="contact">Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -38,11 +38,11 @@
 <nav id="mobileNav" class="fixed inset-0 z-40 hidden flex-col bg-gradient-to-b from-sky-600 to-indigo-700 p-6 text-lg font-medium text-white">
     <button class="self-end text-3xl" aria-label="Close navigation" id="navClose">×</button>
     <ul class="mt-8 space-y-4">
-        <li><a href="index.html">Home</a></li>
-        <li><a class="font-semibold text-yellow-300" href="about.html">About</a></li>
-        <li><a href="3d-signs.html">3D Signs</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.php">Contact</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="3d-signs">3D Signs</a></li>
+        <li><a href="gallery">Gallery</a></li>
+        <li><a href="contact">Contact</a></li>
     </ul>
 </nav>
 
@@ -111,18 +111,6 @@
 </footer>
 
 <!-- Scripts -->
-<script>
-    // Mobile nav
-    const navToggle = document.getElementById('navToggle');
-    const mobileNav = document.getElementById('mobileNav');
-    const navClose = document.getElementById('navClose');
-    navToggle && navToggle.addEventListener('click', () => mobileNav.classList.remove('hidden'));
-    navClose && navClose.addEventListener('click', () => mobileNav.classList.add('hidden'));
-
-    // Header blur
-    const header = document.getElementById('site-header');
-    const blurHeader = () => window.scrollY > 10 ? header.classList.add('scrolled') : header.classList.remove('scrolled');
-    blurHeader(); window.addEventListener('scroll', blurHeader);
-</script>
+<script src="/js/functions.js"></script>
 </body>
 </html>

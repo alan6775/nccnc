@@ -42,9 +42,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header.scrolled{backdrop-filter:blur(10px);background-color:rgba(15,23,42,.6)}
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased">
+<!-- Header -->
+<header id="site-header" class="fixed inset-x-0 top-0 z-50 flex items-center justify-between px-4 md:px-8 py-3 transition-colors duration-300">
+    <a href="/" class="text-xl font-bold tracking-tight text-white"><span class="text-yellow-300">Nc</span>CnC<span class="hidden sm:inline"> Contact</span></a>
 
-<!-- Header stays unchanged -->
+    <button id="navToggle" class="text-white text-2xl md:hidden focus:outline-none" aria-label="Toggle navigation">☰</button>
+
+    <nav aria-label="Main navigation" class="hidden md:block">
+        <ul class="flex gap-6 text-sm font-medium text-white">
+            <li><a class="hover:text-yellow-300" href="/">Home</a></li>
+            <li><a class="hover:text-yellow-300" href="about">About</a></li>
+            <li><a class="hover:text-yellow-300" href="3d-signs">3D Signs</a></li>
+            <li><a class="hover:text-yellow-300" href="gallery">Gallery</a></li>
+            <li><a class="hover:text-yellow-300" href="contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Mobile slide‑over nav -->
+<nav id="mobileNav" class="fixed inset-0 z-40 hidden flex-col bg-gradient-to-b from-sky-600 to-indigo-700 p-6 text-lg font-medium text-white">
+    <button class="self-end text-3xl" aria-label="Close navigation" id="navClose">×</button>
+    <ul class="mt-8 space-y-4">
+        <li><a href="/">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="3d-signs">3D Signs</a></li>
+        <li><a href="gallery">Gallery</a></li>
+        <li><a href="contact">Contact</a></li>
+    </ul>
+</nav>
 
 <main class="pt-0">
     <section class="relative bg-gradient-to-r from-sky-700 to-indigo-800 pt-32 pb-12 text-center text-white">
@@ -99,7 +124,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </form>
     </section>
 </main>
-
+<script src="/js/functions.js"></script>
 <!-- Footer remains unchanged -->
 </body>
 </html>
